@@ -18,6 +18,9 @@ module.exports = {
             maxHeight: {
                 128: "30rem",
             },
+            fontFamily: {
+                sans: ["Inter", "sans-serif"],
+            },
         },
     },
     plugins: [
