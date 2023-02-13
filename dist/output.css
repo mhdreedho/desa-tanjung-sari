@@ -3783,6 +3783,12 @@ textarea.form-control.is-invalid{
   justify-content: space-evenly;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .self-end{
   align-self: flex-end;
 }
@@ -3858,11 +3864,6 @@ textarea.form-control.is-invalid{
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.border-slate-400{
-  --tw-border-opacity: 1;
-  border-color: rgb(148 163 184 / var(--tw-border-opacity));
-}
-
 .border-slate-700{
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
@@ -3871,6 +3872,11 @@ textarea.form-control.is-invalid{
 .border-slate-300{
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
+.border-primary{
+  --tw-border-opacity: 1;
+  border-color: rgb(6 182 212 / var(--tw-border-opacity));
 }
 
 .border-x-zinc-900{
@@ -4483,6 +4489,28 @@ body {
 
   .lg\:rounded-none{
     border-radius: 0px;
+  }
+
+  .lg\:border-2{
+    border-width: 2px;
+  }
+
+  .lg\:border{
+    border-width: 1px;
+  }
+
+  .lg\:border-b-2{
+    border-bottom-width: 2px;
+  }
+
+  .lg\:border-slate-400{
+    --tw-border-opacity: 1;
+    border-color: rgb(148 163 184 / var(--tw-border-opacity));
+  }
+
+  .lg\:border-primary{
+    --tw-border-opacity: 1;
+    border-color: rgb(6 182 212 / var(--tw-border-opacity));
   }
 
   .lg\:bg-transparent{
