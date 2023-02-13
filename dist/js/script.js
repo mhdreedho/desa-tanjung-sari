@@ -24,7 +24,7 @@ hamburger.addEventListener("click", function () {
 });
 
 // remove margin top when page scrolled
-// const section = document.querySelector(".section-content");  
+// const section = document.querySelector(".section-content");
 // let scrollpos = window.scrollY;
 // let scrollchanged = 0;
 
