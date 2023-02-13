@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -76,7 +76,7 @@
                                     <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-black lg:mx-2">Transparasi Keuangan</a>
                                 </li>
                                 <li class="group border-slate-400 hover:cursor-pointer hover:rounded-sm hover:bg-primary">
-                                    <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-black lg:mx-2">Surat Online</a>
+                                    <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-black lg:mx-2">Surat Online</a>
                                 </li>
                                 <li class="group border-slate-400 hover:cursor-pointer hover:rounded-sm hover:bg-primary">
                                     <a href="#home" class="mx-8 flex py-2 text-base text-dark group-hover:text-black lg:mx-2">Login</a>
@@ -93,7 +93,7 @@
         <section id="home" class="pt-20 pb-20">
             <div class="container">
                 <div class="flex flex-wrap">
-                    <div class="w-full self-center px-4 lg:w-1/2">
+                    <div class="mb-10 w-full self-center px-4 lg:mb-0 lg:w-1/4">
                         <h1 class="text-base font-semibold text-primary md:text-xl">
                             Selamat Datang di Website Resmi
                             <span class="mt-1 block text-4xl font-bold text-dark"> Desa Tanjung Sari </span>
@@ -104,12 +104,47 @@
                         </h2>
                         <p class="mb-10 font-medium leading-relaxed text-secondary">Semua Informasi dan Berita Terbaru dari <span class="font-bold text-dark">Desa Tanjung Sari</span> ada disini!</p>
 
-                        <a href="#" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Baca Berita Terbaru</a>
+                        <a href="#news" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Baca Berita Terbaru</a>
                     </div>
 
-                    <div class="w-full self-end px-4 lg:w-1/2">
-                        <div class="mt-10 lg:right-0 lg:mt-9">
-                            <img class="mx-auto max-w-full rounded-full" src="dist/img/img-home.jpeg" alt="" />
+                    <div class="w-full self-end px-4 lg:w-3/4">
+                        <div id="carouselExampleCaptions" class="slide carousel relative" data-bs-ride="carousel">
+                            <div class="carousel-indicators absolute right-0 bottom-0 left-0 mb-4 flex justify-center p-0">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner relative w-full overflow-hidden">
+                                <div class="carousel-item active relative float-left w-full">
+                                    <img src="./dist/img/Carousel/carousel1.jpeg" class="block max-h-128 w-full rounded-3xl object-cover" alt="..." />
+                                    <div class="carousel-caption absolute hidden text-center md:block">
+                                        <h5 class="text-xl">11.080 Peserta Kontingen Bakal Meriahkan FORNAS VI di Sumsel</h5>
+                                        <p class="text-xs">Foto: Pemprov Sumsel</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item relative float-left w-full">
+                                    <img src="./dist/img/Carousel/carousel2.jpeg" class="block max-h-128 w-full rounded-3xl object-cover" alt="..." />
+                                    <div class="carousel-caption absolute hidden text-center md:block">
+                                        <h5 class="text-xl">Herman Deru Raih Penghargaan Terkait Pengembangan Sektor Pertanian</h5>
+                                        <p class="text-xs">Foto: Dok. Pemprov Sumsel</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item relative float-left w-full">
+                                    <img src="./dist/img/Carousel/carousel3.jpeg" class="block max-h-128 w-full rounded-3xl object-cover" alt="..." />
+                                    <div class="carousel-caption absolute hidden text-center md:block">
+                                        <h5 class="text-xl">Gubernur Sumsel Respons Ridwan Kamil Soal LRT Palembang: Tak Sesuai Fakta</h5>
+                                        <p class="text-xs">Gubernur Sumsel Herman Deru. (Foto: Prima Syahbana/detikSumut)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev absolute top-0 bottom-0 left-0 flex items-center justify-center border-0 p-0 text-center hover:no-underline hover:outline-none focus:no-underline focus:outline-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next absolute top-0 bottom-0 right-0 flex items-center justify-center border-0 p-0 text-center hover:no-underline hover:outline-none focus:no-underline focus:outline-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -118,7 +153,7 @@
         <!-- Hero Section End -->
 
         <!-- News Section Start -->
-        <section id="news" class="bg-slate-100 pt-36 pb-32">
+        <section id="news" class="bg-slate-100 pt-10 pb-10">
             <div class="container">
                 <div class="w-full px-4">
                     <div class="mx-auto mb-16 max-w-xl text-center">
@@ -131,48 +166,68 @@
                 <div class="flex flex-wrap">
                     <div class="w-full px-4">
                         <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg lg:flex">
-                            <img src="https://source.unsplash.com/360x200?programming" alt="Berita" class="w-full lg:w-1/4" />
-                            <div class="py-8 px-6">
+                            <img src="./dist/img/Berita/Berita1.jpg" alt="Berita" class="w-full object-cover lg:w-1/4" />
+                            <div class="overflow-hidden py-8 px-6">
                                 <h3>
-                                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary">Berita Terkini Desa</a>
+                                    <a href="#" class="mb-3 block text-xl font-semibold text-dark line-clamp-1 hover:text-clip hover:text-primary"> Putus Monopoli Tengkulak, BUMDes Tanjung Sari, Pengandonan-OKU Siap Tampung Komoditas HHBK </a>
                                 </h3>
-                                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore officiis asperiores a ad doloremque assumenda impedit voluptatibus aliquid accusamus laborum!</p>
+                                <p class="mb-6 text-base font-medium text-secondary line-clamp-3">Badan Usaha Milik Desa (BUMDes) Tanjung Sari, Kecamatan Pengandonan, Kabupaten Ogan Komering Ulu (OKU) Sumatera Selatan, tengah bersiap untuk kebangkitan ekonomi masyarakatnya melalui pemberdayaan hasil hutan bukan kayu (HHBK). Adapun desa Tanjung Sari, Pengandonan merupakan tempat, di mana Ketua Komisi Pemberantasan Korupsi (KPK) RI periode 2019–2023, Komjen Pol. (Purn) Drs Firli Bahuri, M.Si, dilahirkan dan dibesarkan. Kini, perangkat desa beserta keluarga besar Firli Bahuri tengah bersiap membangun kekuatan ekonomi masyarakatnya dengan mengoptimalkan produk hasil bumi HHBK. Bahkan Kepala Desa Tanjung Sari, Juniadi menegaskan bahwa pemerintahan desanya telah memproyeksikan anggaran untuk membangkitkan BUMDes yang siap menampung serta menjual HHBK dari tangan masyarakat. Kata Junaidi, tahun 2023 ini BUMDes Tanjung Sari siap dibangkitkan untuk memutus mata rantai praktik monopoli tengkulak atau tokek yang selama ini cenderung merugikan petani</p>
                                 <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="w-full px-4">
                         <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg lg:flex">
-                            <img src="https://source.unsplash.com/360x200?monitor" alt="Berita" class="w-full lg:w-1/4" />
-                            <div class="py-8 px-6">
+                            <img src="./dist/img/Berita/Berita2.jpg" alt="Berita" class="w-full object-cover lg:w-1/4" />
+                            <div class="overflow-hidden py-8 px-6">
                                 <h3>
-                                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary">Berita Terkini Desa</a>
+                                    <a href="#" class="mb-3 block text-xl font-semibold text-dark line-clamp-1 hover:text-clip hover:text-primary"> Jejak Bumi Indonesia jalankan program rehabilitasi hutan dan DAS </a>
                                 </h3>
-                                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore officiis asperiores a ad doloremque assumenda impedit voluptatibus aliquid accusamus laborum!</p>
+                                <p class="mb-6 text-base font-medium text-secondary line-clamp-3">Komering Ulu (OKU), Sumatera Selatan, menjalankan program rehabilitasi kawasan hutan dan daerah aliransungai (DAS) yang menjadi lahan kritis agar kembali hijau. "Khususnya kawasan DAS Ogan di OKU karena banyak yang telah rusak akibat perambahan hutan secara liar"kata Pendiri Jejak Bumi Indonesia Kabupaten OKU, Hendra Setyawan di Baturaja, Selasa. Menurut Hendra, kondisi kawasan hutan dan DAS yang rusak tersebut menjadi faktor utama penyebabbencana banjir yang sering terjadi di wilayah itu saat musim hujan, terlebih ketika cuaca ekstrem. Berdasarkan data, dari 70,096,51 hektare (ha) kawasan hutan di Kabupaten OKU, 64,657,89 ha di antaranya merupakan lahan kritis termasuk DAS akibat perambahan liar oleh oknum yang tidak bertanggung jawab. Untuk tahap awal, kata dia, rehabilitasi ini dilakukan pihaknya di lahan kritis seluas 3.000 hektare melaluipembentukan Kebun Entres di Desa Tanjung Sari, Kecamatan Pengandonan dan Desa Kemala Jaya,Kecamatan Muarajaya. Pembentukan kebun entres tersebut sebagai upaya mendorong masyarakat dan Kelompok Tani Hutan (KTH)untuk melakukan gerakan menanam pohon agar lahan yang sebelumnya kritis menjadi produktif.</p>
                                 <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="w-full px-4">
                         <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg lg:flex">
-                            <img src="https://source.unsplash.com/360x200?coffee" alt="Berita" class="w-full lg:w-1/4" />
-                            <div class="py-8 px-6">
+                            <img src="./dist/img/Berita/Berita3.jpg" alt="Berita" class="w-full object-cover lg:w-1/4" />
+                            <div class="overflow-hidden py-8 px-6">
                                 <h3>
-                                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary">Berita Terkini Desa</a>
+                                    <a href="#" class="mb-3 block text-xl font-semibold text-dark line-clamp-1 hover:text-clip hover:text-primary">LLH JBI Lakukan Sosialisasi Pembentukan Kebun Entres Desa</a>
                                 </h3>
-                                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore officiis asperiores a ad doloremque assumenda impedit voluptatibus aliquid accusamus laborum!</p>
+                                <p class="mb-6 text-base font-medium text-secondary line-clamp-3">Perkumpulan Lembaga Lingkungan Hidup (LLH)Jejak Bumi Indonesia (JBI) melakukan Sosialisasi dan Pembentukan Kebun Entres Desa di dua Desa, yaitu Desa Tanjung Sari Kecamatan Pengandonan dan Desa Kemalajaya Kecamatan Muarajaya Kabupaten Ogan Komering Ulu (OKU) Sumatera Selatan. Senin (27/09/22) Dikatakan Hendra A Setyawan, S.I.Kom M.I.Kom Pendiri LLH JBI bahwa, kita ketahui Sumsel memiliki sumber daya plasma nutfah unggul diantaranya durian, alpukat, duku, manggis dan lain-lain Lebih kurang 3 tahun terakhir kita mendata dan mengindentifikasi jenis-jenis bibit unggul. Kita berharap bahwa program rehabilitasi hutan dan lahan (RHL) dalam upaya pelestarian Daerah Aliran Sungai (DAS) yang biasanya ditanam dengan pohon sedling (dari biji), setelah pohon-pohon itu tumbuh agar produktif maka akan kita sambung pucuk atau dilakukan dengan sambung bonggol dengan entres pohon unggul, maka kualitas pohon akan baik dan produktif. Ditambahkan Hendra, Hal ini akan menambah semangat bagi Kelompok Tani Hutan (KTH) yang kita bina khususnya di Hutan Lindung (HL) Bukit Nanti Kabupaten OKU. “Mudah-mudahan RHL dengan luas 3000 hektar lebih bisa dilakukan diperbaiki dengan entres bibit unggul”</p>
                                 <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="w-full px-4">
                         <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg lg:flex">
-                            <img src="https://source.unsplash.com/360x200?jet" alt="Berita" class="w-full lg:w-1/4" />
-                            <div class="py-8 px-6">
+                            <img src="./dist/img/Berita/Berita4.jpg" alt="Berita" class="w-full object-cover lg:w-1/4" />
+                            <div class="overflow-hidden py-8 px-6">
                                 <h3>
-                                    <a href="#" class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary">Berita Terkini Desa</a>
+                                    <a href="#" class="mb-3 block text-xl font-semibold text-dark line-clamp-1 hover:text-clip hover:text-primary">Masyarakat Desa Tanjung Sari Kabupaten OKU, Sumatera Selatan bersama JBI Membangun Program Ketahanan Pangan Berbasis Ramah Lingkungan Sekaligus Melestarikan Daerah Aliran Sungai (DAS)</a>
                                 </h3>
-                                <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore officiis asperiores a ad doloremque assumenda impedit voluptatibus aliquid accusamus laborum!</p>
+                                <p class="mb-6 text-base font-medium text-secondary line-clamp-3">Masyarakat Desa Tanjung Sari, Kabupaten Ogan Komering Ulu, Sumatera Selatan bersama Jejak Bumi Indonesia (JBI) membangun program ketahanan pangan berbasis ramah lingkungan sekaligus melestarikan daerah aliran sungai (DAS) Pendiri JBI Ogan Komering Ulu (OKU), Hendra Setyawan di Baturaja, Rabu (22/6/2022), mengatakan, kegiatan ini dilakukan dalam upaya mendukung program ketahanan pangan sesuai instruksi Gubernur Sumsel, Herman Deru. “Sesuai intruksi tersebut bahwa dana desa harus disediakan 20 persen untuk ketahanan pangan,” kata dia. Oleh sebab itu, kata dia, pada tahun ini pemerintah menerbitkan kebijakan terkait pemanfaatan 20 persen dana desa untuk program ketahanan pangan dan hewani. Terkait hal itu pihaknya melakukan pendampingan desa dalam mewujudkan program ketahanan pangan berbasis ramah lingkungan dan DAS. Dalam program tersebut JBI menyediakan sebanyak 30 ribu bibit pohon untuk ditanam di sepanjang DAS agar tetap lestari. Bibit pohon produktif seperti jenis alpukat, pinang dan durian tersebut juga ditanam di kebun rakyat di Desa Tanjung Sari, Kecamatan Baturaja Timur. “Melalui kegiatan ini diharapkan dapat menghijaukan alam sekitar sekaligus penguatan daerah aliran sungai,” harapnya.</p>
+                                <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full px-4">
+                        <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg lg:flex">
+                            <img src="./dist/img/Berita/Berita5.jpg" alt="Berita" class="w-full object-cover lg:w-1/4" />
+                            <div class="overflow-hidden py-8 px-6">
+                                <h3>
+                                    <a href="#" class="mb-3 block text-xl font-semibold text-dark line-clamp-1 hover:text-clip hover:text-primary">Dewan Perwakilan Rakyat Daerah (DPRD) Kabupaten Ogan Komering Ulu (OKU) menggelar Rapat Paripurna Pengesahan Program Pembentukan Peraturan Daerah (PropemPerda) Tahun 2023</a>
+                                </h3>
+                                <p class="mb-6 text-base font-medium text-secondary line-clamp-3">
+                                    Dewan Perwakilan Rakyat Daerah (DPRD) Kabupaten Ogan Komering Ulu (OKU) menggelar Rapat Paripurna Pengesahan Program Pembentukan Peraturan Daerah (PropemPerda) Tahun 2023. Yang di pimpin oleh Ketua DPRD OKU Ir. H. Marjito Bachri dan didampingi oleh Wakil Ketua II, Yoni Risdianto, Senin (30/01/2022).
+                                    <br />
+                                    Rapat diawali dengan mendengarkan kata pengantar dari Pj Bupati OKU yang dibacakan oleh Sekda OKU H. Achmad Tarmizi. Dalam pandangan tersebut, Pj Bupati OKU mengapresiasi langkah DPRD OKU yang telah menyetujui usulan Raperda dari Pemerintah Kabupaten OKU untuk dibahas dan disahkan sebagai Produk hukum daerah. Selanjutnya, Rapat Paripurna dilanjutkan dengan laporan Badan Pembentukan Peraturan Daerah (BPPD) DPRD OKU yang dibacakan oleh Ketua BPPD DPRD OKU, Yopi Sahruddin SSos. Dalam laporannya, Yopi Sahruddin mengatakan, BapemPerda telah memutuskan dan mengesahkan 6 Raperda usulan dari Pemerintah Kabupaten OKU dan 1 Raperda Inisiatif DPRD OKU. “Secara keseluruhan untuk PropemPerda tahun ini sebanyak 7 Raperda, dimana 6 merupakan Raperda usulan Eksekutif dan 1 Raperda inisiatif DPRD OKU. Melalui Paripurna ini, dimintakan dan diusulkan terdapat 7 Raperda OKU tahun 2023 untuk dibahas dan disahkan menjadi Perda,” kata Ketua BPPD DPRD OKU. Adapun ke 6 Raperda usulan Pemkab OKU yang disetujui BPPD DPRD OKU diantaranya Raperda tentang penyerahan prasarana, sarana utilasi umum perumahan. Raperda tentang pajak daerah dan retribusi daerah. Raperda tentang pemilihan kepada Desa. Raperda tentang penyertaan modal PDAM. Raperda perubahan atas Perda no 22 tahun 2012 tentang rencana tata ruang tahun 2012-2032. Raperda tentang pengangkatan dan pemberhentian perangkat desa. Sedangkan untuk Raperda Inisiatif DPRD OKU yaitu Raperda tentang Rebtribusi Bangunan. (TIM) Dalam acara tersebut juga dihadiri oleh H. Achmad Tarmizi yang mewakili Penjabat (Pj) Bupati OKU, H. Teddy Meilwansyah bersama unsur Forum Komunikasi Pimpinan Daerah (Forkopimda).
+                                </p>
                                 <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca Selengkapnya</a>
                             </div>
                         </div>
@@ -183,7 +238,7 @@
         <!-- News Section End -->
 
         <!-- Contact Section Start -->
-        <section id="contact" class="pt-36 pb-32">
+        <section id="contact" class="pt-20 pb-20">
             <div class="container">
                 <div class="w-full px-4">
                     <div class="mx-auto mb-16 max-w-xl text-center">
@@ -334,5 +389,6 @@
         <!-- Footer Section End -->
 
         <script src="dist/js/script.js"></script>
+        <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
     </body>
 </html>

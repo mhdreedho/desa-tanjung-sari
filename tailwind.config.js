@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["index.html"],
+    content: ["index.html", "./src/**/*.{html,js}", "./node_modules/tw-elements/dist/js/**/*.js"],
     theme: {
         container: {
             center: true,
@@ -15,7 +15,14 @@ module.exports = {
             screens: {
                 // "2xl": "1320px",
             },
+            maxHeight: {
+                128: "30rem",
+            },
         },
     },
-    plugins: [],
+    plugins: [
+        // ...
+        require("@tailwindcss/line-clamp"),
+        require("tw-elements/dist/plugin"),
+    ],
 };
