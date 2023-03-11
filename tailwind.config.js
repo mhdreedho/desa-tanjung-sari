@@ -14,6 +14,10 @@ module.exports = {
             },
             screens: {
                 // "2xl": "1320px",
+                // vts : "400px",
+                // ts : "428px",
+                // vxs : "448px",
+                // xs : "512px",
             },
             maxHeight: {
                 128: "30rem",
